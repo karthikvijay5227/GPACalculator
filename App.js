@@ -44,10 +44,6 @@ export default function App() {
     let creditSum = 0;
 
     for (let i = 0; i < creditsArray.length; i++) {
-      if (creditsArray[i] === 'Select' || gradesArray[i] === 'Select') {
-        Alert.alert('Error', 'Please select options for all courses.');
-        return;
-      }
       if (creditsArray[i] !== 'Select' && gradesArray[i] !== 'Select') {
         creditSum += parseInt(creditsArray[i]);
         gradeSum += parseFloat(gradesArray[i]) * parseInt(creditsArray[i]);
